@@ -1,6 +1,6 @@
-#VERSUS
+# VERSUS
 
-##API REST SDN4
+## API REST SDN4
 #### Pré-requis
 - Maven (https://maven.apache.org/)
 
