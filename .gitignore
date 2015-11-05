@@ -1,0 +1,6 @@
+.classpath
+target/
+test/
+bin/
+data/
+.settings/
