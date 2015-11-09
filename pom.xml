@@ -27,13 +27,10 @@
 			<artifactId>hibernate-validator</artifactId>
 		</dependency>
     </dependencies>
-
     <properties>
         <java.version>1.8</java.version>
         <start-class>api.Bootstrap</start-class>
     </properties>
-
-
     <build>
         <plugins>
             <plugin>
