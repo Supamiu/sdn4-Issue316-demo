@@ -37,7 +37,7 @@ public class Player {
 	/**
 	 * La quote elo du joueur, pour les classements
 	 */
-	int elo;
+	int elo = 1200;
 	
 	@RelatedTo(type="FRIEND_WITH", direction = Direction.BOTH)
 	Set<Player> friends;

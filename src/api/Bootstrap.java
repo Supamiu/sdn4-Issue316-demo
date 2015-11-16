@@ -21,7 +21,7 @@ public class Bootstrap extends Neo4jConfiguration{
 	
 	@Bean(destroyMethod = "shutdown")
 	public GraphDatabaseService graphDatabaseService() {
-		return new GraphDatabaseFactory().newEmbeddedDatabase("/var/neo4j/data/graph.db");
+		return new GraphDatabaseFactory().newEmbeddedDatabase("./data/graph.db");
 	}
 	
 	public static void main(String[] args){

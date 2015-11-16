@@ -10,7 +10,7 @@ public class ApiConfiguration extends RepositoryRestMvcConfiguration {
 	@Override
 	public RepositoryRestConfiguration config() {
 		RepositoryRestConfiguration config = super.config();
-		config.setBaseUri("/api");
+		config.setBasePath("/api");
 	    return config;
 	}
 }
