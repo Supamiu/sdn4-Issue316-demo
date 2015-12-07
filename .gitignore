@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 .classpath
 target/
 test/
 bin/
 /data/
 .settings/
+=======
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+>>>>>>> 79935cc75763a0d90c4d43550c49abae84ee1e24

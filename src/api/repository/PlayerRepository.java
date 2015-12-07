@@ -12,7 +12,7 @@ import api.data.Player;
 public interface PlayerRepository extends PagingAndSortingRepository<Player, Long> {
 	
 	@Transactional
-	@Query("Match (p:Player) WHERE p.name = {0}")
+	@Query("Match (p:Player) WHERE p.name = {0} return p")
 	public Player findByName(@Param("0") String name);
 	
 }

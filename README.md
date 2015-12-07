@@ -1,15 +1,13 @@
-# VERSUS
+# sdn4-Issue316-demo
+A simple project to show a running example for SDN4 issue #316
 
-## API REST SDN4
-#### Pré-requis
-- Maven (https://maven.apache.org/)
+The project is provided with a neo4j database inside data/ folder, in this database I have two Player nodes that you can get on /api/player/0 and /api/player/1
 
-J'ai refait l'api rest du projet de versus avec sdn4 (Spring Data Neo4j 4) et Spring Boot, ainsi que Spring Rest
+#Steps to reproduce Issue 316:
+First of all, start spring-boot application:
+`mvn spring-boot:run`
 
-L'intérêt est de simplifier au maximum la gestion du code de l'api, afin de pouvoir se concentrer sur le projet de jeu en lui même.
+Then, simply make a cUrl request :
+`curl -i -X POST -H 'Content-type: text/uri-list' -d 'localhost:8080/api/player/1' http://localhost:8080/api/player/0/friends`
 
-Pour toute documentation:
-
-- Spring Rest : http://docs.spring.io/spring-data/rest/docs/current/reference/html/
-
-Spring boot est configuré, pour lancer l'api, il suffit de faire `mvn spring-boot:run` dans le dossier racine du projet.
+Link to the issue: https://github.com/spring-projects/spring-data-neo4j/issues/316
